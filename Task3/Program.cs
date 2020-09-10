@@ -5,7 +5,7 @@ namespace Task3
 {
     class Program
     {
-        static void Main(string[] args, string UserInput2, int NumberFormatInfo, string UserInput1)
+        static void Main(string[] args)
         {
             /*
              *write a program that aceppts two numbers (integers)
@@ -14,34 +14,26 @@ namespace Task3
              *int b;
              *if(a == b)
              */
-            
 
-            Console.WriteLine("What is the first number?");
-            UserInput1 = Console.ReadLine();
-            Console.WriteLine("What is the second number?");
-            UserInput2 = Console.ReadLine();
 
-            int X;
-            int Y;
-            X = Int32.Parse(UserInput1);
-            Y = Int32.Parse(UserInput2);
+            Console.WriteLine("What is your first number?");
+            string UserInput = Console.ReadLine();
+            int Num1 = Int32.Parse(UserInput);
+            Console.WriteLine("What is yor second number?");
+            UserInput = Console.ReadLine();
+            int Num2 = Int32.Parse(UserInput);
 
-            if (X > Y)
+            if (Num1 == Num2)
             {
-                Console.WriteLine($"{X} is bigger than {Y}");
-            }else if (Y > X)
+                Console.WriteLine("the numbers you provided are equal");
+            } else
             {
-                Console.WriteLine($"{Y} is bigger than {X}");
-            }else
-            {
-                Console.WriteLine($"{X} and {Y} are equal");
+                Console.WriteLine("thenumbers you provided are NOT equal");
             }
+          
 
                     
-            
-              
 
-         
 
 
 
